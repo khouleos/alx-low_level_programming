@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
  * main - prints "all type of data in c"
- * return : 0 Success
+ *
+ * Return: 0 Success
  */
 int main(void)
 {
