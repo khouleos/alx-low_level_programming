@@ -1,12 +1,13 @@
 #include <stdio.h>
 /**
  * main - Entry point of program
- * return: Always 0
+ * Return: Always 0
  */
 int main(void)
 {
 	int i;
-	for (i = 0; i <= 9 ; i++)
+
+	for (i = 48; i <= 57 ; i++)
 		putchar(i);
 	putchar('\n');
 	return (0);
