@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign - Print the sign of number
+ * print_sign - Prints the sign of a numver
  * @n: the checked number
  * Reutrn: 1 if positive -1 if negative else 0
  */
