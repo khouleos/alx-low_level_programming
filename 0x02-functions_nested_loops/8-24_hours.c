@@ -7,9 +7,9 @@ void jack_bauer(void)
 {
 	int i, j, k, l;
 
-	for (i = '0'; i <= '2' ; i++)
+	for (i = 0; i <= 2 ; i++)
 	{
-	for (j = '0'; k <= 9 ; k++)
+	for (j = 0; j <= 9 ; j++)
 	{
 	if ((i <= 1 && j <= 9) || (i <= 2 && j <= 3))
 	{
