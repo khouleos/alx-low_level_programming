@@ -5,7 +5,7 @@
  * @str: pointer
  *
  */
-void _puts(const char *str)
+void _puts(char *str)
 {
-	puts(str);
+	  int puts(const char *str);
 }
