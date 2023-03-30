@@ -9,13 +9,17 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int des_len = strlen(dest);
-	int i;
+	int i = 0;
+	int des_len = 0;
 
+	while (dest[i++])
+	{
+		des_len++;
+	}
 	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
 		dest[des_len + i] = src[i];
 	}
 	dest[des_len + i] = '\0';
-	return dest;
+	return (dest);
 }
