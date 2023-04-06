@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 
-int _sqrt_recursion(int n);
+int _sqrt(int n, int i);
 
 /**
  * _sqrt_recursion - Returns the natural sqaure root
