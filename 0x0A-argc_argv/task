@@ -1,0 +1,5 @@
+#!/bin/bash
+echo -e "#include \"main.h\"\n\n " > $1 && vi $1 && chmod u+x $1
+git add .
+git commit -m $1
+git push origin main
