@@ -21,6 +21,9 @@ int main(int argc, char *argv[])
 	printf("%d\n", res);
 	}
 	else
+	{
 		printf("Error\n");
-	return (0);
+		return (1);
+	}
+		return (0);
 }
