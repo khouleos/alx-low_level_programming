@@ -1,1 +1,1 @@
-this repo is for C programming
+0x09-static_libraries
