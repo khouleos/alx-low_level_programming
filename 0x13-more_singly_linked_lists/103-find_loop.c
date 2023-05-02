@@ -3,30 +3,29 @@
 /**
  * find_listint_loop - finds the loop in a linked list.
  * @head: pointer to the beginning of the list
- *
  * Return: ...
  */
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *p1, *p2;
+	listint_t *tortoise, *hare;
 
-	p1 = p2 = head;
-	while (p1 && p2 && p2->next)
+	tortoise = hare = head;
+	while (tortoise && hare && hare->next)
 	{
-		p1 = p1->next;
-		p2 = p2->next->next;
-		if (p1 == p2)
+		tortoise = tortoise->next;
+		hare = hare->next->next;
+		if (tortoise == hare)
 		{
-			p1 = head;
+			tortoise = head;
 			break;
 		}
 	}
-	if (!p1 || !p2 || !p2->next)
+	if (!tortoise || !hare || !hare->next)
 		return (NULL);
-	while (p1 != p2)
+	while (tortoise != hare)
 	{
-		p1 = p1->next;
-		p2 = p2->next;
+		tortoise = tortoise->next;
+		hare = hare->next;
 	}
-	return (p2);
+	return (hare);
 }
