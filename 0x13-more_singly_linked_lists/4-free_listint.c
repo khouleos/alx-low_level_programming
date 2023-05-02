@@ -3,17 +3,16 @@
 /**
  * free_listint - frees a listint_t
  * @head: the head of the list
- *
  * Return: NULL if fail
  */
 void free_listint(listint_t *head)
 {
-	listint_t *p;
+	listint_t *next;
 
 	while (head != NULL)
 	{
-		p = head->p;
+		next = head->next;
 		free(head);
-		head = p;
+		head = next;
 	}
 }
