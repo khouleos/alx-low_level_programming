@@ -1,8 +1,8 @@
-i#include "lists.h"
+#include "lists.h"
 #include <stdlib.h>
 
 /**
- * delete_nodeint_at_index - deletes the node
+ * delete_nodeint_at_index - deletes the node at index
  * @head: double pointer
  * @index: index of node
  *
