@@ -7,7 +7,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int bin = 1 << (sizeof(unsigned long int) * 8 - 1);
+	unsigned long int bin = 1ul << (sizeof(unsigned long int) * 8 - 1);
 	int count = 0;
 
 	while (bin > 0)
