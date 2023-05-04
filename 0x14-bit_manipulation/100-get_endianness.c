@@ -1,15 +1,13 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * get_endianness - func checks the endianness.
- * Return: ...
+ * get_endianness -  endianness check
+ *
+ * Return: 0 if big endian, 1 if litle endian
  */
 int get_endianness(void)
 {
-	unsigned int e = 0x12345678;
-	unsigned char *s = (unsigned char *) &e;
+	int i = 1;
+	char *s = (char *) &i;
 
-	if (*s == 0x78)
-	return (1);
-	else
-	return (0);
+	return (*s);
 }
